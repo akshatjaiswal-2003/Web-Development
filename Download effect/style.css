@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* button{
+    padding: 10px 20px;
+    background-color: wheat;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+button:active{
+    scale: 0.95;
+} */
+
+/* h1{
+    color: beige;
+} */
+
+.card{
+    /* height: 300px; */
+    width: 500px;
+    background-color: rgb(245, 205, 154);
+    border-radius: 10px;
+    padding: 50px 30px;
+}
+
+.card p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card p span{
+    font-weight: 600;
+    color: royalblue;
+}
+.outer{
+    height: 20px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgb(184, 184, 184);
+}
+
+.inner{
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    border-radius: 50px;
+}
+
+.buttom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttom h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.buttom button{
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.buttom button:active{
+    scale: 0.95;
+}
+

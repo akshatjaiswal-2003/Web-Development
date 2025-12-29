@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom, rgb(30, 30, 30), rgb(35, 35, 35), black);
+    padding: 20px;
+}
+
+section{
+    height: 100%;
+    width: 350px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.all-reels{
+    height: 100%;
+    width: 100%;
+
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.all-reels::-webkit-scrollbar{
+    display: none;
+}
+.reel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: lightseagreen;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.reel video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.reel .bottom{
+    padding: 30px 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.878));
+}
+
+.bottom .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bottom .user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bottom .user{
+    font-size: 15px;
+    font-weight: 500;
+}
+.bottom .user button{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    padding: 2px 7px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid white;
+}
+
+.bottom .user button:active{
+    scale: 0.9;
+}
+
+.bottom>h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.right{
+    width: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    /* transform: translateX(100%); */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    
+}
+
+.right h4{
+    cursor: pointer;
+}
+
+.right i{
+    font-size: 25px;
+}
+
+.right h6{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.right>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    cursor: pointer;
+
+}
+
+.love{
+    color: red;
+}
+
+
+.right>div h4{
+    pointer-events: none;
+}
+
+.right>div h6{
+    pointer-events: none;
+}
+
+.mute{
+    background-color: #333;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.mute i{
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.mute:active{
+    scale: 0.95;
+}

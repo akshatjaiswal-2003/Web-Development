@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Advanced Color Generator 🎨</h1>
+
+    <div id="box"></div>
+
+    <div class="codes">
+        <p>RGB: <span id="rgb">rgb(0,0,0)</span> 
+            <button class="copy" onclick="copyText('rgb')">Copy</button>
+        </p>
+
+        <p>HEX: <span id="hex">#000000</span>
+            <button class="copy" onclick="copyText('hex')">Copy</button>
+        </p>
+    </div>
+
+    <button id="change">Generate Color</button>
+    <button id="gradient">Generate Gradient</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
