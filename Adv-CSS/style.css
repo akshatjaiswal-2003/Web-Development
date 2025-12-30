@@ -47,14 +47,25 @@ body{
     background: 
         linear-gradient(black) padding-box,
         conic-gradient(from var(--rotate), black,rgb(255, 0, 123), black) border-box;
-    border: 5px solid rgba(255, 255, 255, 0);
+    border: 0px solid rgba(255, 255, 255, 0);
+    animation: borderAnimate 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    transition: all 0.3s linear;
+    box-shadow: 0 0 0px rgb(255, 0, 195);
+    color: white;
+    text-shadow: 0 0 0px rgb(255, 0, 123);
 }
 
 .box:hover{
-    box-shadow: 0 0 60px rgb(255, 0, 123);
-    animation: borderAnimate 3s;
-    animation-iteration-count: infinite;
+    animation-play-state: running;
+    border-width: 5px;
+    box-shadow: 0 0 60px rgb(255, 0, 195);
+    color: rgb(255, 0, 123);
+    text-shadow: 0 0 60px rgb(255, 0, 123);
 }
+
 
 .box img{
     width: 100%;
